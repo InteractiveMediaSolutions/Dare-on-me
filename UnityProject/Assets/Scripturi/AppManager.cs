@@ -12,9 +12,8 @@ public class AppManager : MonoBehaviour {
     void Start()
     {
 
-
-        EngagementReach.Initialize();
-        EngagementReach.Initialize();
+        
+        EngagementAgent.Initialize();
         EngagementAgent.StartActivity("Main");
 
     }
