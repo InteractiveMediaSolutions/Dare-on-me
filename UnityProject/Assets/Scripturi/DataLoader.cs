@@ -3,13 +3,14 @@ using System.Collections;
 
 public class DataLoader : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+   IEnumerator  Start()
+    {
+        WWW itemData = new WWW("http://coadademaimuta.com/eduard_udriste_licenta/ItemsData.php");
+
+        yield return itemData;
+        string itemsDataString = itemData.text;
+        print(itemsDataString);
+        
+    }
+
 }
